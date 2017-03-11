@@ -113,6 +113,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="AS6-XA-iJv" kind="showDetail" identifier="detail" id="Y6q-Qj-QNL"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -124,6 +127,42 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nnh-Ab-61U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="139" y="-538"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="ZNz-9x-bCm">
+            <objects>
+                <viewController id="AS6-XA-iJv" customClass="DetailViewController" customModule="diary" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fHI-1a-FJf"/>
+                        <viewControllerLayoutGuide type="bottom" id="GTG-zC-6xI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vTA-Qq-75F">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R7v-Pt-cCd">
+                                <rect key="frame" x="20" y="27" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wbX-w8-OVY">
+                                <rect key="frame" x="20" y="65" width="560" height="154"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="contentLabel" destination="wbX-w8-OVY" id="aRd-Op-cah"/>
+                        <outlet property="titleLabel" destination="R7v-Pt-cCd" id="KYL-Pv-HA4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VUr-s6-970" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="851" y="-538"/>
         </scene>
     </scenes>
 </document>

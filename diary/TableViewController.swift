@@ -13,15 +13,15 @@ class TableViewController: UITableViewController {
     var contentList = [
         [
             "title": "this is the first one",
-            "content": "hello"
+            "content": "hello 1"
         ],
         [
             "title": "this is the second one",
-            "content": "hello"
+            "content": "hello 2"
         ],
         [
             "title": "this is the third one",
-            "content": "hello"
+            "content": "hello 3"
         ],
     ]
     
@@ -95,14 +95,21 @@ class TableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        if segue.identifier == "detail" {
+            let detailViewController: DetailViewController = segue.destinationViewController as! DetailViewController
+            let indexPath = tableView.indexPathForSelectedRow?.row
+            
+            detailViewController.titleText = contentList[indexPath!]["title"]
+            detailViewController.contentText = contentList[indexPath!]["content"]
+        }
     }
-    */
+    
 
 }

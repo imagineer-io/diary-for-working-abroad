@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A90561AA1E72937C00515170 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90561A91E72937C00515170 /* TableViewController.swift */; };
+		A97BDFF31E73B152007BEE12 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97BDFF21E73B152007BEE12 /* DetailViewController.swift */; };
 		A99C2B9B1E6FFAE700F38466 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99C2B9A1E6FFAE700F38466 /* AppDelegate.swift */; };
 		A99C2B9D1E6FFAE700F38466 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99C2B9C1E6FFAE700F38466 /* ViewController.swift */; };
 		A99C2BA01E6FFAE700F38466 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A99C2B9E1E6FFAE700F38466 /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		A90561A91E72937C00515170 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		A97BDFF21E73B152007BEE12 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		A99C2B971E6FFAE700F38466 /* diary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = diary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A99C2B9A1E6FFAE700F38466 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A99C2B9C1E6FFAE700F38466 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				A99C2BA91E6FFAE700F38466 /* Info.plist */,
 				A99C2BA11E6FFAE700F38466 /* diary.xcdatamodeld */,
 				A90561A91E72937C00515170 /* TableViewController.swift */,
+				A97BDFF21E73B152007BEE12 /* DetailViewController.swift */,
 			);
 			path = diary;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 			files = (
 				A99C2BA31E6FFAE700F38466 /* diary.xcdatamodeld in Sources */,
 				A99C2B9D1E6FFAE700F38466 /* ViewController.swift in Sources */,
+				A97BDFF31E73B152007BEE12 /* DetailViewController.swift in Sources */,
 				A99C2B9B1E6FFAE700F38466 /* AppDelegate.swift in Sources */,
 				A90561AA1E72937C00515170 /* TableViewController.swift in Sources */,
 			);
