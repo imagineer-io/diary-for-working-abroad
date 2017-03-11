@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A90561AA1E72937C00515170 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90561A91E72937C00515170 /* TableViewController.swift */; };
 		A99C2B9B1E6FFAE700F38466 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99C2B9A1E6FFAE700F38466 /* AppDelegate.swift */; };
 		A99C2B9D1E6FFAE700F38466 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99C2B9C1E6FFAE700F38466 /* ViewController.swift */; };
 		A99C2BA01E6FFAE700F38466 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A99C2B9E1E6FFAE700F38466 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A90561A91E72937C00515170 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		A99C2B971E6FFAE700F38466 /* diary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = diary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A99C2B9A1E6FFAE700F38466 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A99C2B9C1E6FFAE700F38466 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				A99C2BA61E6FFAE700F38466 /* LaunchScreen.storyboard */,
 				A99C2BA91E6FFAE700F38466 /* Info.plist */,
 				A99C2BA11E6FFAE700F38466 /* diary.xcdatamodeld */,
+				A90561A91E72937C00515170 /* TableViewController.swift */,
 			);
 			path = diary;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 				A99C2BA31E6FFAE700F38466 /* diary.xcdatamodeld in Sources */,
 				A99C2B9D1E6FFAE700F38466 /* ViewController.swift in Sources */,
 				A99C2B9B1E6FFAE700F38466 /* AppDelegate.swift in Sources */,
+				A90561AA1E72937C00515170 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,6 +490,7 @@
 				A99C2BC41E6FFAE700F38466 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A99C2BC51E6FFAE700F38466 /* Build configuration list for PBXNativeTarget "diaryTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +499,7 @@
 				A99C2BC71E6FFAE700F38466 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A99C2BC81E6FFAE700F38466 /* Build configuration list for PBXNativeTarget "diaryUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +508,7 @@
 				A99C2BCA1E6FFAE700F38466 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
