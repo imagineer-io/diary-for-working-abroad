@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var textArea: UITextView!
     @IBOutlet weak var contentLabel: UILabel!
     
-    @IBAction func buttonPressed(sender: AnyObject) {
+    @IBAction func buttonPressed(_ sender: AnyObject) {
         let text = textInput.text
         textLabel.text = text
         
