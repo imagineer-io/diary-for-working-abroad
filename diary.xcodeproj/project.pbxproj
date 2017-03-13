@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		A90561AA1E72937C00515170 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90561A91E72937C00515170 /* TableViewController.swift */; };
 		A97BDFF31E73B152007BEE12 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97BDFF21E73B152007BEE12 /* DetailViewController.swift */; };
+		A99415621E76C13400AA4AE2 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99415611E76C13400AA4AE2 /* TableViewCell.swift */; };
+		A99415641E76C15B00AA4AE2 /* swift.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A99415631E76C15B00AA4AE2 /* swift.jpeg */; };
 		A99C2B9B1E6FFAE700F38466 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99C2B9A1E6FFAE700F38466 /* AppDelegate.swift */; };
 		A99C2B9D1E6FFAE700F38466 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99C2B9C1E6FFAE700F38466 /* ViewController.swift */; };
 		A99C2BA01E6FFAE700F38466 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A99C2B9E1E6FFAE700F38466 /* Main.storyboard */; };
@@ -39,6 +41,8 @@
 /* Begin PBXFileReference section */
 		A90561A91E72937C00515170 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		A97BDFF21E73B152007BEE12 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		A99415611E76C13400AA4AE2 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		A99415631E76C15B00AA4AE2 /* swift.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = swift.jpeg; sourceTree = "<group>"; };
 		A99C2B971E6FFAE700F38466 /* diary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = diary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A99C2B9A1E6FFAE700F38466 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A99C2B9C1E6FFAE700F38466 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +107,7 @@
 		A99C2B991E6FFAE700F38466 /* diary */ = {
 			isa = PBXGroup;
 			children = (
+				A99415631E76C15B00AA4AE2 /* swift.jpeg */,
 				A99C2B9A1E6FFAE700F38466 /* AppDelegate.swift */,
 				A99C2B9C1E6FFAE700F38466 /* ViewController.swift */,
 				A99C2B9E1E6FFAE700F38466 /* Main.storyboard */,
@@ -112,6 +117,7 @@
 				A99C2BA11E6FFAE700F38466 /* diary.xcdatamodeld */,
 				A90561A91E72937C00515170 /* TableViewController.swift */,
 				A97BDFF21E73B152007BEE12 /* DetailViewController.swift */,
+				A99415611E76C13400AA4AE2 /* TableViewCell.swift */,
 			);
 			path = diary;
 			sourceTree = "<group>";
@@ -197,7 +203,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = imagineer;
 				TargetAttributes = {
 					A99C2B961E6FFAE700F38466 = {
@@ -244,6 +250,7 @@
 				A99C2BA81E6FFAE700F38466 /* LaunchScreen.storyboard in Resources */,
 				A99C2BA51E6FFAE700F38466 /* Assets.xcassets in Resources */,
 				A99C2BA01E6FFAE700F38466 /* Main.storyboard in Resources */,
+				A99415641E76C15B00AA4AE2 /* swift.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +278,7 @@
 				A99C2BA31E6FFAE700F38466 /* diary.xcdatamodeld in Sources */,
 				A99C2B9D1E6FFAE700F38466 /* ViewController.swift in Sources */,
 				A97BDFF31E73B152007BEE12 /* DetailViewController.swift in Sources */,
+				A99415621E76C13400AA4AE2 /* TableViewCell.swift in Sources */,
 				A99C2B9B1E6FFAE700F38466 /* AppDelegate.swift in Sources */,
 				A90561AA1E72937C00515170 /* TableViewController.swift in Sources */,
 			);
@@ -341,8 +349,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -386,8 +396,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -406,6 +418,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
