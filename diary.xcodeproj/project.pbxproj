@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A90561AA1E72937C00515170 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90561A91E72937C00515170 /* TableViewController.swift */; };
+		A917A4A31E77BF2800DCFF69 /* Article+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A917A4A11E77BF2800DCFF69 /* Article+CoreDataClass.swift */; };
+		A917A4A41E77BF2800DCFF69 /* Article+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A917A4A21E77BF2800DCFF69 /* Article+CoreDataProperties.swift */; };
 		A97BDFF31E73B152007BEE12 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97BDFF21E73B152007BEE12 /* DetailViewController.swift */; };
 		A99415621E76C13400AA4AE2 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99415611E76C13400AA4AE2 /* TableViewCell.swift */; };
 		A99415641E76C15B00AA4AE2 /* swift.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A99415631E76C15B00AA4AE2 /* swift.jpeg */; };
@@ -40,6 +42,8 @@
 
 /* Begin PBXFileReference section */
 		A90561A91E72937C00515170 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		A917A4A11E77BF2800DCFF69 /* Article+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Article+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A917A4A21E77BF2800DCFF69 /* Article+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Article+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		A97BDFF21E73B152007BEE12 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		A99415611E76C13400AA4AE2 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		A99415631E76C15B00AA4AE2 /* swift.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = swift.jpeg; sourceTree = "<group>"; };
@@ -107,6 +111,8 @@
 		A99C2B991E6FFAE700F38466 /* diary */ = {
 			isa = PBXGroup;
 			children = (
+				A917A4A11E77BF2800DCFF69 /* Article+CoreDataClass.swift */,
+				A917A4A21E77BF2800DCFF69 /* Article+CoreDataProperties.swift */,
 				A99415631E76C15B00AA4AE2 /* swift.jpeg */,
 				A99C2B9A1E6FFAE700F38466 /* AppDelegate.swift */,
 				A99C2B9C1E6FFAE700F38466 /* ViewController.swift */,
@@ -277,7 +283,9 @@
 			files = (
 				A99C2BA31E6FFAE700F38466 /* diary.xcdatamodeld in Sources */,
 				A99C2B9D1E6FFAE700F38466 /* ViewController.swift in Sources */,
+				A917A4A31E77BF2800DCFF69 /* Article+CoreDataClass.swift in Sources */,
 				A97BDFF31E73B152007BEE12 /* DetailViewController.swift in Sources */,
+				A917A4A41E77BF2800DCFF69 /* Article+CoreDataProperties.swift in Sources */,
 				A99415621E76C13400AA4AE2 /* TableViewCell.swift in Sources */,
 				A99C2B9B1E6FFAE700F38466 /* AppDelegate.swift in Sources */,
 				A90561AA1E72937C00515170 /* TableViewController.swift in Sources */,
@@ -374,7 +382,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -415,7 +423,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
