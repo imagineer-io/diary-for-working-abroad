@@ -71,7 +71,8 @@ class TableViewController: UITableViewController, NSFetchedResultsControllerDele
 //        cell.cellImage.image = UIImage(named: "swift.jpeg")
         // Configure the cell...
         let article = controller.object(at: indexPath)
-        cell.cellLabel.text = article.title
+//        cell.cellLabel.text = article.title
+        cell.textLabel?.text = article.title
 
         return cell
     }
@@ -86,6 +87,7 @@ class TableViewController: UITableViewController, NSFetchedResultsControllerDele
             sectionNameKeyPath: nil, cacheName: nil
         )
         self.controller = controller
+        self.controller.delegate = self
         
         do {
             try controller.performFetch()
@@ -93,6 +95,32 @@ class TableViewController: UITableViewController, NSFetchedResultsControllerDele
             let error = error as NSError
             print("\(error)")
         }
+    }
+    
+    func controllerWillChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
+        tableView.beginUpdates()
+    }
+    
+    func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
+        tableView.endUpdates()
+    }
+    
+    func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>, didChange anObject: Any, at indexPath: IndexPath?, for type: NSFetchedResultsChangeType, newIndexPath: IndexPath?) {
+        switch(type) {
+        case .insert:
+            if let indexPath = newIndexPath {
+                tableView.insertRows(at: [indexPath], with: .fade)
+            }
+            break
+        default:
+            break
+        }
+        
+//        if type == NSFetchedResultsChangeType.insert {
+//            if let indexPath = newIndexPath {
+//                tableView.insertRows(at: [indexPath], with: .fade)
+//            }
+//        }
     }
 
     /*

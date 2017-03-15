@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -64,38 +63,23 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="86" id="LrD-iD-xv4" customClass="TableViewCell" customModule="diary" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="eqP-Ee-Puz" rowHeight="86" style="IBUITableViewCellStyleDefault" id="LrD-iD-xv4" customClass="TableViewCell" customModule="diary" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="86"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LrD-iD-xv4" id="ybL-J2-A7r">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="85"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GWX-7B-AHa">
-                                            <rect key="frame" x="8" y="5" width="73" height="73"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="73" id="HAH-1s-cVv"/>
-                                            </constraints>
-                                        </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wE5-eD-i3i">
-                                            <rect key="frame" x="141" y="32" width="42" height="21"/>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eqP-Ee-Puz">
+                                            <rect key="frame" x="15" y="0.0" width="345" height="85"/>
+                                            <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
-                                    <constraints>
-                                        <constraint firstItem="wE5-eD-i3i" firstAttribute="leading" secondItem="GWX-7B-AHa" secondAttribute="trailing" constant="60" id="1CX-Jw-lZE"/>
-                                        <constraint firstItem="GWX-7B-AHa" firstAttribute="leading" secondItem="ybL-J2-A7r" secondAttribute="leadingMargin" id="B39-iL-4rJ"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="GWX-7B-AHa" secondAttribute="bottom" constant="-1" id="FEB-oL-3nZ"/>
-                                        <constraint firstItem="GWX-7B-AHa" firstAttribute="top" secondItem="ybL-J2-A7r" secondAttribute="topMargin" constant="-3" id="J3J-vB-U1Z"/>
-                                        <constraint firstItem="wE5-eD-i3i" firstAttribute="centerY" secondItem="ybL-J2-A7r" secondAttribute="centerY" id="egN-gR-vZB"/>
-                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="cellImage" destination="GWX-7B-AHa" id="2re-Pe-5Q9"/>
-                                    <outlet property="cellLabel" destination="wE5-eD-i3i" id="35L-ne-znu"/>
-                                    <outlet property="imageView" destination="GWX-7B-AHa" id="62t-FP-pG1"/>
                                     <segue destination="AS6-XA-iJv" kind="showDetail" identifier="detail" id="Y6q-Qj-QNL"/>
                                 </connections>
                             </tableViewCell>
