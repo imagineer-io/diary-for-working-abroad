@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -80,7 +81,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="AS6-XA-iJv" kind="showDetail" identifier="detail" id="Y6q-Qj-QNL"/>
+                                    <segue destination="AS6-XA-iJv" kind="show" identifier="detail" id="YS8-pW-jWM"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -101,10 +102,10 @@
             </objects>
             <point key="canvasLocation" x="1077.5999999999999" y="-538.38080959520244"/>
         </scene>
-        <!--Detail View Controller-->
+        <!--일기 내용-->
         <scene sceneID="ZNz-9x-bCm">
             <objects>
-                <viewController id="AS6-XA-iJv" customClass="DetailViewController" customModule="diary" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="일기 내용" id="AS6-XA-iJv" customClass="DetailViewController" customModule="diary" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fHI-1a-FJf"/>
                         <viewControllerLayoutGuide type="bottom" id="GTG-zC-6xI"/>
@@ -113,22 +114,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R7v-Pt-cCd">
-                                <rect key="frame" x="20" y="27" width="560" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R7v-Pt-cCd">
+                                <rect key="frame" x="16" y="82" width="343" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="AHw-qp-dXi"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wbX-w8-OVY">
-                                <rect key="frame" x="20" y="65" width="560" height="154"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wbX-w8-OVY">
+                                <rect key="frame" x="16" y="111" width="343" height="163"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hzf-6z-v8e">
+                                <rect key="frame" x="16" y="606" width="343" height="41"/>
+                                <color key="backgroundColor" red="1" green="0.039765733839813522" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="8MT-jq-w0k"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <state key="normal" title="삭제하기"/>
+                                <connections>
+                                    <action selector="deleteButtonPressed:" destination="AS6-XA-iJv" eventType="touchUpInside" id="u1R-6U-jCJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="R7v-Pt-cCd" firstAttribute="leading" secondItem="vTA-Qq-75F" secondAttribute="leadingMargin" id="OaF-c2-NQy"/>
+                            <constraint firstItem="wbX-w8-OVY" firstAttribute="top" secondItem="R7v-Pt-cCd" secondAttribute="bottom" constant="8" symbolic="YES" id="Q6F-hw-Oyn"/>
+                            <constraint firstItem="R7v-Pt-cCd" firstAttribute="leading" secondItem="wbX-w8-OVY" secondAttribute="leading" id="QVv-HI-iHY"/>
+                            <constraint firstItem="R7v-Pt-cCd" firstAttribute="trailing" secondItem="wbX-w8-OVY" secondAttribute="trailing" id="aLB-Qk-W9O"/>
+                            <constraint firstItem="R7v-Pt-cCd" firstAttribute="top" secondItem="fHI-1a-FJf" secondAttribute="bottom" constant="18" id="btu-zY-Gbv"/>
+                            <constraint firstItem="GTG-zC-6xI" firstAttribute="top" secondItem="wbX-w8-OVY" secondAttribute="bottom" constant="393" id="gN0-LQ-glJ"/>
+                            <constraint firstItem="R7v-Pt-cCd" firstAttribute="trailing" secondItem="vTA-Qq-75F" secondAttribute="trailingMargin" id="ird-jI-L6n"/>
+                            <constraint firstAttribute="bottom" secondItem="Hzf-6z-v8e" secondAttribute="bottom" constant="20" symbolic="YES" id="j9K-HN-Xp7"/>
+                            <constraint firstItem="Hzf-6z-v8e" firstAttribute="leading" secondItem="wbX-w8-OVY" secondAttribute="leading" id="qn7-Q5-Sq0"/>
+                            <constraint firstItem="Hzf-6z-v8e" firstAttribute="trailing" secondItem="wbX-w8-OVY" secondAttribute="trailing" id="uPG-Tu-yrS"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="contentLabel" destination="wbX-w8-OVY" id="aRd-Op-cah"/>
@@ -137,7 +163,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VUr-s6-970" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1789.5999999999999" y="-538.38080959520244"/>
+            <point key="canvasLocation" x="1917.5999999999999" y="-538.38080959520244"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="J39-cx-16c">

@@ -14,14 +14,17 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var contentLabel: UILabel!
     
-    var titleText:String?
-    var contentText:String?
+//    var titleText:String?
+//    var contentText:String?
+    var article:Article?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        titleLabel.text = titleText
-        contentLabel.text = contentText
+//        titleLabel.text = titleText
+//        contentLabel.text = contentText
+        titleLabel.text = article?.title
+        contentLabel.text = article?.content
 
         // Do any additional setup after loading the view.
     }
@@ -31,6 +34,12 @@ class DetailViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func deleteButtonPressed(_ sender: Any) {
+        context.delete(article!)
+        appDelegate.saveContext()
+        
+        _ = navigationController?.popViewController(animated: true)
+    }
 
     /*
     // MARK: - Navigation
